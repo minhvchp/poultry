@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Poultry Disease Detector",
+    "slug": "poultry-disease-detector",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0f1e"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.poultry.diseasedetector",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Ứng dụng cần truy cập thư viện ảnh để chọn ảnh phân tích bệnh gia cầm.",
+        "NSCameraUsageDescription": "Ứng dụng cần camera để chụp ảnh phân tích bệnh gia cầm."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0f1e"
+      },
+      "package": "com.poultry.diseasedetector",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Cho phép ứng dụng truy cập thư viện ảnh của bạn.",
+          "cameraPermission": "Cho phép ứng dụng sử dụng camera của bạn."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9d1e0df7-2692-4fa0-a40b-f1c0d8ddef24"
+      }
+    }
+  }
+}
